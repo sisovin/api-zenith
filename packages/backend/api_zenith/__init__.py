@@ -24,4 +24,10 @@ def create_app() -> Flask:
     from .views import main
     app.register_blueprint(main)
 
+    from .resources.user import user_bp
+    from .resources.product import product_bp
+
+    app.register_blueprint(user_bp, url_prefix='/api/v1/users')
+    app.register_blueprint(product_bp, url_prefix='/api/v1/products')
+
     return app
