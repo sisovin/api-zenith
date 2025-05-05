@@ -4,5 +4,14 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "playwright": "^1.12.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-playwright": "^0.0.1",
+    "pre-commit": "^2.13.0"
+  }
 }
