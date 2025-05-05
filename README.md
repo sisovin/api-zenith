@@ -1,5 +1,31 @@
 # API Zenith Documentation
 
+## Project Overview
+API Zenith is a robust and scalable API platform designed for managing users and products. Built with a monorepo architecture, it leverages modern technologies like Python, TypeScript, PostgreSQL, and Redis to deliver high performance and reliability. The platform aims to streamline backend and frontend development, offering a seamless integration between services.
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Monorepo Architecture](#monorepo-architecture)
+   - [Architecture Diagram](#architecture-diagram)
+   - [Component Details](#component-details)
+3. [API Endpoint Reference](#api-endpoint-reference)
+   - [User Endpoints](#user-endpoints)
+   - [Product Endpoints](#product-endpoints)
+4. [Authentication](#authentication)
+5. [Development Environment Setup Guide](#development-environment-setup-guide)
+6. [Contribution Guidelines](#contribution-guidelines)
+7. [Codebase Structure](#codebase-structure)
+8. [FAQ](#faq)
+9. [Troubleshooting](#troubleshooting)
+
+---
+
+## Monorepo Architecture
+
+### Architecture Diagram
+```mermaid
+graph
+
 ## Monorepo Architecture Diagram
 
 ```mermaid
