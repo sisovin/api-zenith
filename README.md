@@ -13,6 +13,8 @@ API Zenith is a robust and scalable API platform designed for managing users and
    - [Product Endpoints](#product-endpoints)
 4. [Authentication](#authentication)
 5. [Development Environment Setup Guide](#development-environment-setup-guide)
+   - [Prerequisites](#prerequisites)
+   - [Setup Steps](#setup-steps)
 6. [Contribution Guidelines](#contribution-guidelines)
 7. [Codebase Structure](#codebase-structure)
 8. [FAQ](#faq)
