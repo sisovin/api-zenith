@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "python.pythonPath": "venv/bin/python",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
