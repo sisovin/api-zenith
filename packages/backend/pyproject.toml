@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "api_zenith"
@@ -15,3 +15,8 @@ dependencies = [
     "psycopg2-binary",
     "redis"
 ]
+
+[tool.hatch.envs.dev.dependencies]
+pytest = "^6.2.4"
+flake8 = "^3.9.2"
+black = "^21.5b2"
