@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import CodeSample from '../components/CodeSample';
 import FeatureGrid from '../components/FeatureGrid';
+import ApiVersionSwitcher from '../components/ApiVersionSwitcher';
 
 const HomePage = () => {
   const codeExample = `
@@ -78,6 +79,10 @@ const HomePage = () => {
         <div className="mb-4">
           <h3 className="text-xl font-semibold mb-2">FeatureGrid Component</h3>
           <FeatureGrid features={features} />
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">API Version Switcher</h3>
+          <ApiVersionSwitcher />
         </div>
       </section>
     </div>
