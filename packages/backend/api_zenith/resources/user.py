@@ -14,7 +14,7 @@ def get_users():
     users = User.query.all()
     return users_schema.jsonify(users), 200
 
-@user_bp.route('/users/<int:id>', methods=['GET'])
+@user_bp.route('/users/<uuid:id>', methods=['GET'])
 def get_user(id):
     user = User.query.get_or_404(id)
     return user_schema.jsonify(user), 200
@@ -31,7 +31,7 @@ def create_user():
     db.session.commit()
     return user_schema.jsonify(user), 201
 
-@user_bp.route('/users/<int:id>', methods=['PUT'])
+@user_bp.route('/users/<uuid:id>', methods=['PUT'])
 def update_user(id):
     user = User.query.get_or_404(id)
     try:
@@ -45,7 +45,7 @@ def update_user(id):
     db.session.commit()
     return user_schema.jsonify(user), 200
 
-@user_bp.route('/users/<int:id>', methods=['DELETE'])
+@user_bp.route('/users/<uuid:id>', methods=['DELETE'])
 def delete_user(id):
     user = User.query.get_or_404(id)
     db.session.delete(user)
