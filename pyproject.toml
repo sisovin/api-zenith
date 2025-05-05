@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "api_zenith"
+version = "0.1.0"
+description = "Backend service for API Zenith"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "Flask",
+    "python-dotenv",
+    "psycopg2-binary",
+    "redis"
+]
+
+[tool.hatch.envs.dev.dependencies]
+pytest = "^6.2.4"
+flake8 = "^3.9.2"
+black = "^21.5b2"
+pytest-cov = "^2.12.1"
