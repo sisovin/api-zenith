@@ -14,7 +14,7 @@ def get_products():
     products = Product.query.all()
     return products_schema.jsonify(products), 200
 
-@product_bp.route('/products/<int:id>', methods=['GET'])
+@product_bp.route('/products/<uuid:id>', methods=['GET'])
 def get_product(id):
     product = Product.query.get_or_404(id)
     return product_schema.jsonify(product), 200
@@ -31,7 +31,7 @@ def create_product():
     db.session.commit()
     return product_schema.jsonify(product), 201
 
-@product_bp.route('/products/<int:id>', methods=['PUT'])
+@product_bp.route('/products/<uuid:id>', methods=['PUT'])
 def update_product(id):
     product = Product.query.get_or_404(id)
     try:
@@ -45,7 +45,7 @@ def update_product(id):
     db.session.commit()
     return product_schema.jsonify(product), 200
 
-@product_bp.route('/products/<int:id>', methods=['DELETE'])
+@product_bp.route('/products/<uuid:id>', methods=['DELETE'])
 def delete_product(id):
     product = Product.query.get_or_404(id)
     db.session.delete(product)
